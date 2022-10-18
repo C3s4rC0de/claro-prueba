@@ -1,5 +1,5 @@
 export type MovieType = {
-  id: number;
+  id: string;
   title: string;
   title_episode: string | null;
   title_uri: string | null;

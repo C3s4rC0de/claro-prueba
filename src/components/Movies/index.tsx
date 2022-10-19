@@ -12,7 +12,7 @@ const Movies = ({ movies }: Props) => {
   const xsGrid = useMediaQuery("(max-width:500px)");
 
   return (
-    <Grid container py={6} px={md ? 8 : 4} spacing={2}>
+    <Grid container py={6} px={md ? 8 : 4} spacing={2} ml={6}>
       {movies.map((movie) => (
         <Link key={movie.id} to={"movie/" + movie.id}>
           <Grid item xs={xsGrid ? 6 : 4} sm={3} md={4} lg={3} xl={2}>

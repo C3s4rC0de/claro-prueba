@@ -3,7 +3,7 @@ import logo from "../../assets/logo.svg";
 import styles from "./Header.module.css";
 
 type Props = {
-  children: any;
+  children?: any;
 };
 
 const Header = ({ children }: Props) => {
@@ -11,7 +11,7 @@ const Header = ({ children }: Props) => {
     <div>
       <div className={styles.logoContainer}>
         <Link to="/">
-          <img src={logo} alt="Logo clarovideo" width={213} height={43} />
+          <img src={logo} alt="logo clarovideo" width={213} height={43} />
         </Link>
       </div>
       {children}

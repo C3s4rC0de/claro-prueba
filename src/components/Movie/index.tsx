@@ -8,9 +8,7 @@ import styles from "./Movie.module.css";
 import { IconButton } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 
-type Props = {};
-
-const Movie = (props: Props) => {
+const Movie = () => {
   const { id } = useParams();
   const { movie, getMovie } = useGetMovieDetail();
 
@@ -44,7 +42,7 @@ const Movie = (props: Props) => {
         <Grid container className={styles.movieContent}>
           <Grid item md={5} xs={12} className={styles.previewContainer}>
             <img
-              alt="fondo-pelicula"
+              alt="captura-pelicula"
               className={styles.previewImage}
               src={movie?.image_still}
             />

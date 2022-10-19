@@ -25,7 +25,10 @@ const Home = () => {
       if (debouncedSearch === "") {
         return movie;
       } else {
-        return movie?.title.toLowerCase().includes(debouncedSearch);
+        return (
+          movie?.title.toLowerCase().includes(debouncedSearch) ||
+          movie?.title_original.toLowerCase().includes(debouncedSearch)
+        );
       }
     });
     setFilteredMovies(filteredMovies);
@@ -45,7 +48,6 @@ const Home = () => {
       <div className={styles.searchContainer}>
         <SearchBar searchHandler={searchHandler} />
       </div>
-
       <Movies movies={filteredMovies} />
     </div>
   );

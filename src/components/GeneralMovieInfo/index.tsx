@@ -3,7 +3,7 @@ import styles from "./GeneralMovieInfo.module.css";
 
 type Props = {
   movie: MovieDetailType | null;
-  md: boolean;
+  md?: boolean;
 };
 
 const GeneralMovieInfo = ({ movie, md }: Props) => {

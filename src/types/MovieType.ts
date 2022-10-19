@@ -3,7 +3,7 @@ export type MovieType = {
   title: string;
   title_episode: string | null;
   title_uri: string | null;
-  title_original: string | null;
+  title_original: string;
   description: string | null;
   description_large: string | null;
   short_description: string | null;
@@ -39,7 +39,7 @@ export type MovieType = {
   rating_code: string | null;
   proveedor_name: string | null;
   proveedor_code: string | null;
-  encoder_technology: {
+  encoder_tecnology: {
     id: number | null;
     desc: any;
   };

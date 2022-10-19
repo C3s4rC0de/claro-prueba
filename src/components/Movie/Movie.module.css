@@ -1,6 +1,6 @@
 .detail {
   color: #fff;
-  overflow-Y: scroll;
+  overflow: auto;
   position: relative;
   height: 85vh;
   display: block;

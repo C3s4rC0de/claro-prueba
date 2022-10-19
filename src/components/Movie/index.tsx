@@ -77,7 +77,6 @@ const Movie = () => {
           </Grid>
         </Grid>
       </div>
-      ¿
     </div>
   );
 };
